@@ -1,4 +1,4 @@
-package homework._2023_06_20;
+package homework._2023_06_20_dop;
 
 import java.util.HashMap;
 import java.util.Map;
