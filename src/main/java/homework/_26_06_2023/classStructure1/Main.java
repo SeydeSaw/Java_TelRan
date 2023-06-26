@@ -39,28 +39,28 @@ public class Main {
         positionMap.put(Position.POSITION3, Arrays.asList("Занимает должность POSITION3. Работает в компании больше 6 лет"));
 
 
-        Info info1 = new Info(positionMap);
+        Info info = new Info(positionMap);
 
 
-        System.out.println("Информация о сотруднике: " + info1.checker(employee1));
-        System.out.println("Информация о сотруднике: " + info1.checker(employee2));
+        System.out.println("Информация о сотруднике: " + info.checker(employee1));
+        System.out.println("Информация о сотруднике: " + info.checker(employee2));
 
-        System.out.println("Средняя зарплата в DEPARTMENT1: " + info1.avgSalary(Department.DEPARTMENT1, company) + " CHF");
-        System.out.println("Средняя зарплата в DEPARTMENT2: " + info1.avgSalary(Department.DEPARTMENT2, company) + " CHF");
-        System.out.println("Средняя зарплата в DEPARTMENT3: " + info1.avgSalary(Department.DEPARTMENT3, company) + " CHF");
+        System.out.println("Средняя зарплата в DEPARTMENT1: " + info.avgSalary(Department.DEPARTMENT1, company) + " CHF");
+        System.out.println("Средняя зарплата в DEPARTMENT2: " + info.avgSalary(Department.DEPARTMENT2, company) + " CHF");
+        System.out.println("Средняя зарплата в DEPARTMENT3: " + info.avgSalary(Department.DEPARTMENT3, company) + " CHF");
 
-        System.out.println("Информация о сотруднике в DEPARTMENT1: " + info1.maxSalary(Department.DEPARTMENT1, company));
-        System.out.println("Информация о сотруднике в DEPARTMENT2: " + info1.maxSalary(Department.DEPARTMENT2, company));
-        System.out.println("Информация о сотруднике в DEPARTMENT3: " + info1.maxSalary(Department.DEPARTMENT3, company));
+        System.out.println("Информация о сотруднике в DEPARTMENT1: " + info.maxSalary(Department.DEPARTMENT1, company));
+        System.out.println("Информация о сотруднике в DEPARTMENT2: " + info.maxSalary(Department.DEPARTMENT2, company));
+        System.out.println("Информация о сотруднике в DEPARTMENT3: " + info.maxSalary(Department.DEPARTMENT3, company));
 
-        System.out.println("Информация о сотруднике в DEPARTMENT1: " + info1.minSalary(Department.DEPARTMENT1, company));
-        System.out.println("Информация о сотруднике в DEPARTMENT2: " + info1.minSalary(Department.DEPARTMENT2, company));
-        System.out.println("Информация о сотруднике в DEPARTMENT3: " + info1.minSalary(Department.DEPARTMENT3, company));
+        System.out.println("Информация о сотруднике в DEPARTMENT1: " + info.minSalary(Department.DEPARTMENT1, company));
+        System.out.println("Информация о сотруднике в DEPARTMENT2: " + info.minSalary(Department.DEPARTMENT2, company));
+        System.out.println("Информация о сотруднике в DEPARTMENT3: " + info.minSalary(Department.DEPARTMENT3, company));
 
         System.out.println("Повышение для сотрудника employee1:");
-        info1.getPromotion(employee1);
+        info.getPromotion(employee1);
 
         System.out.println("Повышение для сотрудника employee6:");
-        info1.getPromotion(employee8);
+        info.getPromotion(employee8);
     }
 }
